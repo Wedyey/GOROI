@@ -3,17 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GORIO Gallery</title>
     <style>
-        body{
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7f5;
+            color: #1d1d1d;
+        }
+
+        header {
+            padding: 20px;
+            background: #06c54f;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            letter-spacing: 0.08em;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            background: #111;
+        }
+
+        .navbar li {
+            margin: 0;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 18px 24px;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background: #2b2b2b;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px 40px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .card p {
+            margin: 12px 0 0;
+            font-weight: 700;
         }
     </style>
 </head>
 <body>
-    HIIIIII GORIOOOO <br>
-    <a href="index.html">click here to go back</a>
+    <header>
+        <h1>PARO PARO GOROI</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="GoroiMem.html">Members</a></li>
+            <li><a href="gor.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>GOROI Gallery</h2>
+            <p>Meet the crew behind the GOROI squad.</p>
+        </section>
+
+        <section class="gallery" aria-label="GOROI gallery">
+            <figure class="card">
+                <img src="wejie.jpg" alt="Wejie">
+                <p>Wejie</p>
+            </figure>
+            <figure class="card">
+                <img src="cloudio.jpg" alt="Cloudio">
+                <p>Cloudio</p>
+            </figure>
+            <figure class="card">
+                <img src="ost.jpg" alt="Ostings">
+                <p>Ostings</p>
+            </figure>
+            <figure class="card">
+                <img src="rodulf.jpg" alt="Dolpo">
+                <p>Dolpo</p>
+            </figure>
+            <figure class="card">
+                <img src="keonpogs.jpg" alt="Keon">
+                <p>Keon</p>
+            </figure>
+            <figure class="card">
+                <img src="pon.jpg" alt="Pon Emman">
+                <p>Pon Emman</p>
+            </figure>
+            <figure class="card">
+                <img src="samexthegamer.jpg" alt="Samex the Gamer">
+                <p>Samex the Gamer</p>
+            </figure>
+            <figure class="card">
+                <img src="kadong.jpg" alt="Kadong">
+                <p>Kadong</p>
+            </figure>
+            <figure class="card">
+                <img src="christchan.jpg" alt="Dak Ols">
+                <p>Dak Ols</p>
+            </figure>
+            <figure class="card">
+                <img src="dacocoits.jpg" alt="Dacoconut">
+                <p>Dacoconut</p>
+            </figure>
+        </section>
+    </main>
 </body>
 </html>
